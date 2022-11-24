@@ -3,7 +3,7 @@ Shader "Custom/Sphere"
     Properties
     {
         _Centre("Centre",Vector) = (0,0,0)
-        _Radius("Radius", Range(0,1)) = 0.8
+        _Radius("Radius", float) = 30
         _MainTex("MainTex", 2D) = "white"{} 
     }
         SubShader
@@ -48,7 +48,7 @@ Shader "Custom/Sphere"
             //光线步进
             bool raymarchHit(float3 position, float3 direction)
             {
-                float STEPS = 64;
+                float STEPS = 664;
                 float STEP_SIZE = 0.1;
                 for (int i = 0; i < STEPS; i++)
                 {
@@ -62,13 +62,14 @@ Shader "Custom/Sphere"
             }
 
             //Texture Map
-  /*          fixed3 map(float3 p) 
+            fixed3 map(float3 p) 
             {
-                float lat = - 90. + Arccosine(p.y / length(p)) * 180. / PI;
-                float lon = + Arctangent(p.x, p.z) * 180. / PI;
+                float PI = 3.15;
+                float lat = - 90. + acos(p.y / length(p)) * 180. / PI;
+                float lon = + atan2(p.x, p.z) * 180. / PI;
                 float2 uv = float2(lon / 360. + 0.5, lat / 180. + 0.5);
-                return tex2D()
-            }*/
+                return tex2D(_MainTex, uv).rgb;
+            }
 
 
             v2f vert(appdata v)
@@ -83,10 +84,10 @@ Shader "Custom/Sphere"
             {
                 float3 worldPosition = i.wPos;
                 float3 viewDirection = normalize(i.wPos - _WorldSpaceCameraPos);
-                fixed3 texColor = tex2D(_MainTex, i.wPos.xy);
-
+                fixed3 texColor = map(i.wPos);
+                
                 if (raymarchHit(worldPosition, viewDirection))
-                    return fixed4(texColor, 1); // Red if hit the ball
+                    return fixed4(texColor / 2, 1); // Red if hit the ball
                 else
                     return fixed4(1,1,1,0); // White otherwise
             }
