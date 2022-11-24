@@ -5,6 +5,7 @@ Shader "Custom/Sphere"
         _Centre("Centre",Vector) = (0,0,0)
         _Radius("Radius", float) = 30
         _MainTex("MainTex", 2D) = "white"{} 
+        
     }
         SubShader
     {
@@ -65,8 +66,8 @@ Shader "Custom/Sphere"
             fixed3 map(float3 p) 
             {
                 float PI = 3.15;
-                float lat = - 90. + acos(p.y / length(p)) * 180. / PI;
-                float lon = + atan2(p.x, p.z) * 180. / PI;
+                float lat = + 90. - acos(p.y / length(p)) * 180. / PI;
+                float lon =  atan2(p.x, p.z) * 180. / PI;
                 float2 uv = float2(lon / 360. + 0.5, lat / 180. + 0.5);
                 return tex2D(_MainTex, uv).rgb;
             }
