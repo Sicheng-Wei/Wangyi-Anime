@@ -2,12 +2,20 @@ Shader "Custom/Sphere"
 {
     Properties
     {
+        // Sphere Parameters
         _Centre("Centre",Vector) = (0,0,0)
         _Radius("Radius", float) = 30
         _MainTex("MainTex", 2D) = "white"{} 
         
+        // Lighting Parameters
+        _Steps("Step", int) = 1000
+        _StepSize("StepSize", float) = 0.01
+        _Diffuse("Diffuse Color", Color) = (1, 1, 1, 1)
+        _Specular("Specular Color", Color) = (1, 1, 1, 1)
+        
     }
-        SubShader
+    
+    SubShader
     {
         Tags { "Queue" = "Transparent" "IgnoreProjector" = "True" "RenderType" = "Transparent" }
         LOD 100
@@ -17,14 +25,19 @@ Shader "Custom/Sphere"
             Blend SrcAlpha OneMinusSrcAlpha
 
             CGPROGRAM
+            
             #include "Lighting.cginc"
+            #include "UnityCG.cginc"
 
             #pragma vertex vert
             #pragma fragment frag
 
-            #include "UnityCG.cginc"
+            float3      _Centre;
+            fixed       _Radius;
+            sampler2D   _MainTex;
 
-            sampler2D _MainTex;
+            int         _Steps;
+            float       _StepSize;
 
             struct appdata
             {
@@ -37,8 +50,7 @@ Shader "Custom/Sphere"
                 float3 wPos : TEXCOORD1;    // World position
             };
 
-            float3 _Centre;
-            fixed _Radius;
+
 
             // 判断是否进入球内
             bool sphereHit(float3 p)
@@ -49,23 +61,18 @@ Shader "Custom/Sphere"
             //光线步进
             bool raymarchHit(float3 position, float3 direction)
             {
-                float STEPS = 664;
-                float STEP_SIZE = 0.1;
-                for (int i = 0; i < STEPS; i++)
+                for (int i = 0; i < _Steps; i++)
                 {
-                    if (sphereHit(position))
-                        return true;
-
-                    position += direction * STEP_SIZE;
+                    if (sphereHit(position)) return true;
+                    position += direction * _StepSize;
                 }
-
                 return false;
             }
 
             //Texture Map
             fixed3 map(float3 p) 
             {
-                float PI = 3.15;
+                float PI = 3.1415926535;
                 float lat = + 90. - acos(p.y / length(p)) * 180. / PI;
                 float lon =  atan2(p.x, p.z) * 180. / PI;
                 float2 uv = float2(lon / 360. + 0.5, lat / 180. + 0.5);
@@ -83,14 +90,18 @@ Shader "Custom/Sphere"
 
             fixed4 frag(v2f i) : SV_Target
             {
-                float3 worldPosition = i.wPos;
+                //i.wPos.y = i.wPos.y * 60;
+                //i.wPos.x *= 54;
+                //i.wPos.z *= 54;
+                float3 worldPosition = float3(i.wPos.x, i.wPos.y * 1.125, i.wPos.z);
                 float3 viewDirection = normalize(i.wPos - _WorldSpaceCameraPos);
+
                 fixed3 texColor = map(i.wPos);
                 
                 if (raymarchHit(worldPosition, viewDirection))
-                    return fixed4(texColor / 2, 1); // Red if hit the ball
+                    return fixed4(texColor, 1);     // Tex if hit the ball
                 else
-                    return fixed4(1,1,1,0); // White otherwise
+                    return fixed4(1, 1, 1, 0);      // Transparent otherwise
             }
         ENDCG
         }
