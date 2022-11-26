@@ -15,27 +15,39 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))//控制人物的移动
+        if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.forward * movespeed * Time.deltaTime);
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(Vector3.back * movespeed * Time.deltaTime);
-
         }
 
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(-1 * Vector3.up * rotatespeed * Time.deltaTime);
-
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             transform.Rotate(Vector3.up * rotatespeed * Time.deltaTime);
+        }
 
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Rotate(Vector3.forward * rotatespeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Rotate(-1 * Vector3.forward * rotatespeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Rotate(-1 * Vector3.right * rotatespeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Rotate(Vector3.right * rotatespeed * Time.deltaTime);
         }
     }
 }
