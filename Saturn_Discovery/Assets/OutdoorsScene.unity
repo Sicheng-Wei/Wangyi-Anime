@@ -810,15 +810,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   volumeAnchorOverride: {fileID: 0}
-  antialiasing: 3
+  antialiasing: 1
   SMAAQuality: 2
   dithering: 1
   stopNaNs: 1
-  taaSharpenStrength: 1.124
+  taaSharpenStrength: 0.967
   TAAQuality: 2
-  taaHistorySharpening: 0.318
-  taaAntiFlicker: 0.391
-  taaMotionVectorRejection: 0.441
+  taaHistorySharpening: 0.562
+  taaAntiFlicker: 1
+  taaMotionVectorRejection: 0.559
   taaAntiHistoryRinging: 1
   taaBaseBlendFactor: 0.875
   taaJitterScale: 1
