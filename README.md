@@ -16,7 +16,7 @@
 
 #### 2.3 Image Sources
 
-**<u>Surface Map of Saturn</u>**
+<u>**Surface Map of Saturn**</u>
 
 ​	*Author: [ESO Supernova](https://supernova.eso.org/exhibition/images/SATURN-CC/)*	*Credit: NASA*
 
@@ -40,7 +40,7 @@
 
 
 
-**<u>Rings of Saturn</u>** 
+<u>**Rings of Saturn**</u> 
 
 ​	*Author*: *[Niko22966](https://www.deviantart.com/niko22966)* 
 
