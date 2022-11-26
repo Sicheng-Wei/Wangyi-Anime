@@ -16,6 +16,20 @@
 
 ### 2.3 Image Sources
 
+#### - **Lens Flare Texture of the Sun**
+&emsp;*Author: [Richard Morgan](https://rpmorgan.medium.com/)*
+
+&emsp;*Image Source Link: https://rpmorgan.medium.com/create-a-lens-flare-in-unity-2021-using-hdrp-c31d6d3fe3ee*
+
+&emsp;*Image Usage License: from Richard Morgan*
+
+```
+Feel free to use the above images I created for the Lens Flare (SRP). I created them with PhotoShop using Legacy Gradients for the rings and a free lens flare brush for the shimmer found here:
+https://www.brusheezy.com/brushes/57378-free-lens-flares-photoshop-brushes-2
+```
+
+<br />
+
 #### - **Surface Map of Saturn**
 
 &emsp;*Author: [ESO Supernova](https://supernova.eso.org/exhibition/images/SATURN-CC/)* &emsp;&emsp;*Credit: NASA*
