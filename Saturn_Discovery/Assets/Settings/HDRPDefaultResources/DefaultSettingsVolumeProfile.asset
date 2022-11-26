@@ -640,10 +640,10 @@ MonoBehaviour:
     m_Value: 0.6864
   cascadeShadowBorder1:
     m_OverrideState: 1
-    m_Value: 0.33575758
+    m_Value: 0.21606061
   cascadeShadowBorder2:
     m_OverrideState: 1
-    m_Value: 0.42105263
+    m_Value: 0.15192983
   cascadeShadowBorder3:
     m_OverrideState: 1
-    m_Value: 0.4741
+    m_Value: 0.0824
