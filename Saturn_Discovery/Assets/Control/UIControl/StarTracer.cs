@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StarMarker : MonoBehaviour
+public class StarTracer : MonoBehaviour
 {
     [SerializeField]
     GameObject worldPos;//3D物体（人物）

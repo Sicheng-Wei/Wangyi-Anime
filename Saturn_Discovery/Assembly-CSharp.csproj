@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Control\UIControl\StarTracer.cs" />
+    <Compile Include="Assets\Control\ObjControl\CameraMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
