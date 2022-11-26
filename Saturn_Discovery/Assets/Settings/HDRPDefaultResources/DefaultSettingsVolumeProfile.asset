@@ -645,5 +645,5 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.42105263
   cascadeShadowBorder3:
-    m_OverrideState: 0
-    m_Value: 0.4
+    m_OverrideState: 1
+    m_Value: 0
