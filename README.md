@@ -87,7 +87,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![55200](.\README\55200.png)
+![55200](./README/55200.png)
 
 
 
@@ -99,7 +99,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![4638](.\README\4638.png)
+![4638](./README/4638.png)
 
 #### **Containment Box**
 
@@ -109,7 +109,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![9337](.\README\9337.png)
+![9337](./README/9337.png)
 
 #### **Lead Item Casing**
 
@@ -119,7 +119,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![9843](.\README\9843.png)
+![9843](./README/9843.png)
 
 #### **Hammer**
 
@@ -129,7 +129,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![4620](.\README\4620.png)
+![4620](./README/4620.png)
 
 #### **Lead Ingot**
 
@@ -139,7 +139,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![4672](.\README\4672.png)
+![4672](./README/4672.png)
 
 #### **Fuel Rod (Depleted MOX)**
 
@@ -149,7 +149,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![4672](.\README\4642.png)
+![4672](./README/4642.png)
 
 #### **Fuel Rod (Depleted Uranium)**
 
@@ -159,7 +159,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![4672](.\README\4639.png)
+![4672](./README/4639.png)
 
 #### **Plutonium**
 
@@ -169,7 +169,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![4672](.\README\4637.png)
+![4672](./README/4637.png)
 
 #### **Uranium 238**
 
@@ -179,7 +179,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![4672](.\README\4633.png)
+![4672](./README/4633.png)
 
 
 
@@ -191,7 +191,7 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![4672](.\README\4645.png)
+![4672](./README/4645.png)
 
 #### **Fuel Rod (Empty)**
 
@@ -201,4 +201,4 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 &emsp;*Image Usage License:	[BY-NC-SA 3.0]*
 
-![4672](.\README\4618.png)
+![4672](./README/4618.png)
