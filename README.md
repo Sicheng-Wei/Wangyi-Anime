@@ -79,3 +79,126 @@ P.S: This image is a generated image based on a [NASA PHOTO](https://photojourna
 
 ![ESO-SATURN-CC](./README/Niko22966-Saturn-Ring.jpg)
 
+#### **Fuel Canister**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/55200.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![55200](./README/55200.png)
+
+
+
+#### **MOX Nuclear Fuel**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/4638.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![4638](./README/4638.png)
+
+#### **Containment Box**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/9337.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![9337](./README/9337.png)
+
+#### **Lead Item Casing**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/9843.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![9843](./README/9843.png)
+
+#### **Hammer**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/4620.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![4620](./README/4620.png)
+
+#### **Lead Ingot**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/4672.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![4672](./README/4672.png)
+
+#### **Fuel Rod (Depleted MOX)**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/4642.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![4672](./README/4642.png)
+
+#### **Fuel Rod (Depleted Uranium)**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/4639.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![4672](./README/4639.png)
+
+#### **Plutonium**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/4637.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![4672](./README/4637.png)
+
+#### **Uranium 238**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/4633.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![4672](./README/4633.png)
+
+
+
+#### **Fuel Rod (MOX)**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/4645.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![4672](./README/4645.png)
+
+#### **Fuel Rod (Empty)**
+
+&emsp;*Size: 128×128*
+
+&emsp;*Image Source Link :https://www.mcmod.cn/item/4618.html*
+
+&emsp;*Image Usage License:	[BY-NC-SA 3.0]*
+
+![4672](./README/4618.png)
