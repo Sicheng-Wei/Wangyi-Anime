@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movementcontrol : MonoBehaviour
+public class MovementControl : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    float forwardmovespeed = 60f;
-    float backwardmovespeed = 10f;
-    float rotatespeed = 30f;
+    float forwardmovespeed = 6f;
+    float rotatespeed = 3f;
 
     // Use this for initialization
     void Start()
@@ -19,14 +18,24 @@ public class movementcontrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!Input.GetKey(KeyCode.LeftShift) && Camera.main.fieldOfView > 40)
+        {
+            Camera.main.fieldOfView -= 1;
+        }
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(Vector3.forward * forwardmovespeed * Time.deltaTime);
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(-1 * Vector3.forward * backwardmovespeed * Time.deltaTime);
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(Camera.main.fieldOfView * Vector3.forward * forwardmovespeed * Time.deltaTime);
+                if (Camera.main.fieldOfView < 170)
+                {
+                    Camera.main.fieldOfView += 1;
+                }
+            }
+            else
+            {
+                transform.Translate(Vector3.forward * forwardmovespeed * Time.deltaTime);
+            }
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -58,5 +67,7 @@ public class movementcontrol : MonoBehaviour
         {
             transform.Rotate(Vector3.right * rotatespeed * Time.deltaTime);
         }
+
+        
     }
 }

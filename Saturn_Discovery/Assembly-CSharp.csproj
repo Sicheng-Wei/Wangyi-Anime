@@ -57,12 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Control\UIControl\StarTracer.cs" />
-    <Compile Include="Assets\Control\ObjControl\PeripheralCallback.cs" />
-    <Compile Include="Assets\spacecraft\scripts\movementcontrol.cs" />
-    <Compile Include="Assets\spacecraft\scripts\cameracontrol.cs" />
+    <Compile Include="Assets\Spacecraft\scripts\MovementControl.cs" />
+    <Compile Include="Assets\Spacecraft\scripts\CameraControl.cs" />
+    <Compile Include="Assets\Control\Appearance\EngineOverclock.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\spacecraft\Readme.txt" />
+    <None Include="Assets\Spacecraft\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

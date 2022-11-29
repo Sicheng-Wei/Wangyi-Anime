@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameracontrol : MonoBehaviour
+public class CameraControl : MonoBehaviour
 {
     private Transform player; //玩家
 
     private Transform watchPoint; //注视目标点
     private float watchPointHeight = 1.7f; //注视目标点高度
 
-    private float distance = 2.8f; //当前 摄像机到目标点距离
+    private float distance = -30f; //当前 摄像机到目标点距离
     private float distanceMax = 50f; //到目标点最大距离
     private float distanceMin = 8.0f; //到目标点最小距离
     private float distanceSpeed = 3f; //距离增减速度
@@ -34,13 +34,16 @@ public class cameracontrol : MonoBehaviour
 
     private void LateUpdate()
     {
-        ChangeDistance(); //滚轮增减 摄像机到目标点距离
-        ChangeRotationY(); //水平旋转
-        ChangeAngle(); //垂直旋转
-        FinalCameraPos(); //摄像机最终位置
+        if (Input.GetAxis("Mouse ScrollWheel") != 0 || Input.GetMouseButton(1))
+        {
+            WheelChange();
+            ChangeRotationY(); //水平旋转
+            ChangeAngle(); //垂直旋转
+            FinalCameraPos(); //摄像机最终位置
+        }
     }
 
-    private void ChangeDistance() //滚轮增减 摄像机到目标点距离
+    private void WheelChange() //滚轮增减 摄像机到目标点距离
     {
         //接收鼠标滚轮输入
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
@@ -115,6 +118,4 @@ public class cameracontrol : MonoBehaviour
         //摄像机始终看向 注视目标点
         transform.LookAt(watchPoint.position);
     }
-
-
 }
