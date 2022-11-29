@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
+    [SerializeField]
+    private Camera cam;
+
     private Transform player; //玩家
 
     private Transform watchPoint; //注视目标点
@@ -34,7 +37,7 @@ public class CameraControl : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") != 0 || Input.GetMouseButton(1))
+        if (Input.GetAxis("Mouse ScrollWheel") != 0 || Input.GetMouseButton(1) || Input.GetKey(KeyCode.LeftShift))
         {
             WheelChange();
             ChangeRotationY(); //水平旋转
@@ -100,7 +103,7 @@ public class CameraControl : MonoBehaviour
             finalVec = Vector3.Lerp(-watchPoint.forward, -watchPoint.up, -AngleLerp); //垂直角度插值系数 取正
 
         finalVec.Normalize(); //单位化偏移向量长度为1
-        finalVec *= distance; //设定 偏移向量的长度
+        finalVec *= distance * 40f / cam.fieldOfView; //设定 偏移向量的长度
     }
 
     private void FinalCameraPos() //摄像机最终位置

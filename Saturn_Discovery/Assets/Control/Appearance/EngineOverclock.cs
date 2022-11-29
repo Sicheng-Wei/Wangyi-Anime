@@ -5,13 +5,19 @@ using UnityEngine;
 public class EngineOverclock : MonoBehaviour
 {
     [SerializeField]
-    Material engine;
+    Material mat;
     [SerializeField]
     Camera cam;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
     {
-        engine.SetFloat("Emissive Intensity", cam.fieldOfView * 10);
+        // mat.SetFloat("");
     }
 }
