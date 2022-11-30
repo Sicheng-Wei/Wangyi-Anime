@@ -3,8 +3,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
-public class InventoryControl : MonoBehaviour
+
+public class InventoryControl : MonoBehaviour, IPointerEnterHandler
 {
     readonly Dictionary<string, string> intro = new Dictionary<string, string>
     {
@@ -24,20 +26,33 @@ public class InventoryControl : MonoBehaviour
     private Button btn;
 
     [SerializeField]
-    TMP_Text text;
-
+    TMP_Text text, num;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
-    public void onLeftClick()
+    public void OnPointerEnter(PointerEventData eventData)//鼠标划入时调用
     {
         text.text = intro[gameObject.name];
-    }
+        updatenum(10);
+        
 
+    }
+    public void onLeftClick()
+    {
+        
+    }
+    
+    public void updatenum(int numinput)
+    {
+        if (num)
+        {
+            num.text = numinput.ToString();
+        }
+    }
 
 }
 
