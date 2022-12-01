@@ -12,7 +12,7 @@ public class InventoryManager : MonoBehaviour
     {"9337" , 0},
     {"9843" , 0},
     {"4620" , 1},
-    {"4672" , 0},
+    {"4672" , 10},
     {"4642" , 0},
     {"4639" , 0},
     {"4637" , 0},
@@ -32,7 +32,10 @@ public class InventoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       foreach(var item in Inv)
+        {
+            GameObject.Find(item.Key).GetComponent<InventoryControl>().updatenum(item.Value);
+        }
     }
 
 
@@ -46,16 +49,22 @@ public class InventoryManager : MonoBehaviour
     public void addnum(string ID, int num)
     {
         Inv[ID] += num;
-        GameObject.Find(ID).GetComponent<InventoryControl>().updatenum(num);
+        GameObject.Find(ID).GetComponent<InventoryControl>().updatenum(Inv[ID]);
     }
     public int  minusnum(string ID, int num)
     {
-        if (Inv[ID] > num)
+        if (Inv[ID] >= num)
         {
             Inv[ID] -= num;
-            GameObject.Find(ID).GetComponent<InventoryControl>().updatenum(num);
+            GameObject.Find(ID).GetComponent<InventoryControl>().updatenum(Inv[ID]);
             return 0;
         }
         else return 1;
     }
+    public int getnum(string ID)
+    {
+        return Inv[ID];
+    }
+
+
 }

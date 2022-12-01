@@ -24,25 +24,46 @@ public class InventoryControl : MonoBehaviour, IPointerEnterHandler
       {"4618" , "燃料棒(空):空的燃料棒" }
     };
     private Button btn;
+    private string ID;
 
     [SerializeField]
     TMP_Text text, num;
+//    [SerializeField]
+    InventoryManager Inv;
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ID = gameObject.name;
+        Inv = gameObject.transform.parent.GetComponent<InventoryManager>();
     }
 
     public void OnPointerEnter(PointerEventData eventData)//鼠标划入时调用
     {
         text.text = intro[gameObject.name];
-        updatenum(10);
+        
     }
 
     public void onLeftClick()
     {
         
+        if(true)//预计是在合成面板打开时
+        {
+            if(Inv.getnum(ID) > 0)//如果存在
+            {
+                int res = GameObject.Find("Gen1").GetComponent<CraftBlock>().fill(ID);
+                if (res != 0)
+                {
+                    
+                    Inv.minusnum(ID, 1);
+                }
+                
+
+            }
+            
+        }
     }
     
     public void updatenum(int numinput)
@@ -53,6 +74,7 @@ public class InventoryControl : MonoBehaviour, IPointerEnterHandler
         }
     }
 
+    
 }
 
 
