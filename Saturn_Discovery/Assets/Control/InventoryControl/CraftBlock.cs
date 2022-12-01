@@ -44,7 +44,7 @@ public class CraftBlock : MonoBehaviour
         else if (nextbutton) return nextbutton.fill(ID);
         else return 0;
     }
-    public void unfill()
+    public void unfill()//退回物品
     {
         if(filled())
         {
@@ -54,5 +54,22 @@ public class CraftBlock : MonoBehaviour
         }
 
     }
+    
+    public int getID()
+    {
+        if (ID == "") return 0;
+        else return int.Parse(ID);
+    }
 
+    public void Craft()//使用物品进行制作
+    {
+        if(ID == "4620")//是锤子
+        {
+            unfill();
+        }
+        else
+        {
+            ID = "";
+        }
+    }
 }
