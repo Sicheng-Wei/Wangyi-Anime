@@ -76,6 +76,7 @@
     <Compile Include="Assets\Control\Appearance\SceneExchange.cs" />
     <Compile Include="Assets\Control\Appearance\ExitGame.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\ApplicationManager.cs" />
+    <Compile Include="Assets\Control\InventoryControl\CraftBlock.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
