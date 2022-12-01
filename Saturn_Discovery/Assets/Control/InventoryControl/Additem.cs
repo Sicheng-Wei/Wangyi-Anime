@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Additem : MonoBehaviour
@@ -12,6 +13,13 @@ public class Additem : MonoBehaviour
     string ID;
 
     InventoryManager Inv;
+
+    [SerializeField]
+    TMP_Text snum;
+
+
+    int num;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,14 +27,20 @@ public class Additem : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update()//实时显示剩余数量
     {
-        
+        snum.text = num.ToString();
     }
 
     void Click()
     {
+
         Inv = GameObject.Find("InventoryPanel").GetComponent<InventoryManager>();
-        Inv.addnum(lis[ID], 1);
+        if(num > 0)
+        {
+            num--;
+            Inv.addnum(lis[ID], 1);
+        }
+        
     }
 }
