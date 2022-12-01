@@ -48,6 +48,7 @@ public class InventoryControl : MonoBehaviour, IPointerEnterHandler
 
     public void onLeftClick()
     {
+        
         if(true)//预计是在合成面板打开时
         {
             if(Inv.getnum(ID) > 0)//如果存在
@@ -55,8 +56,10 @@ public class InventoryControl : MonoBehaviour, IPointerEnterHandler
                 int res = GameObject.Find("Gen1").GetComponent<CraftBlock>().fill(ID);
                 if (res != 0)
                 {
+                    
                     Inv.minusnum(ID, 1);
                 }
+                
 
             }
             

@@ -49,14 +49,14 @@ public class InventoryManager : MonoBehaviour
     public void addnum(string ID, int num)
     {
         Inv[ID] += num;
-        GameObject.Find(ID).GetComponent<InventoryControl>().updatenum(num);
+        GameObject.Find(ID).GetComponent<InventoryControl>().updatenum(Inv[ID]);
     }
     public int  minusnum(string ID, int num)
     {
-        if (Inv[ID] > num)
+        if (Inv[ID] >= num)
         {
             Inv[ID] -= num;
-            GameObject.Find(ID).GetComponent<InventoryControl>().updatenum(num);
+            GameObject.Find(ID).GetComponent<InventoryControl>().updatenum(Inv[ID]);
             return 0;
         }
         else return 1;

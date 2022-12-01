@@ -53,28 +53,9 @@ public class CraftResult : MonoBehaviour
         if (ID != "") return true;
         else return false;
     }
-    public int fill(string IDinput)//1则成功填入，0则未成功
-    {
-        if (filled())
-        {
-            ID = IDinput;
-            return 1;
-        }
-        
-        else return 0;
-    }
-    public void unfill()
-    {
-        if (filled())
-        {
-            GameObject.Find("InventoryPanel").GetComponent<InventoryManager>().addnum(ID, 1);
-            ID = "";
+    
 
-        }
-
-    }
-
-    void Click()
+    public void Click()
     {
         if(ID !="")//能做则做
         {

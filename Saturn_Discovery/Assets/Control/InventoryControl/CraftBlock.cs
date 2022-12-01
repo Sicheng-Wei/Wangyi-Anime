@@ -36,12 +36,12 @@ public class CraftBlock : MonoBehaviour
     }
     public int fill(string IDinput)//1则成功填入，0则未成功
     {
-        if (filled())
+        if (!filled())
         {
             ID = IDinput;
             return 1;
         }
-        else if (nextbutton) return nextbutton.fill(ID);
+        else if (nextbutton) return nextbutton.fill(IDinput);
         else return 0;
     }
     public void unfill()//退回物品
@@ -71,5 +71,12 @@ public class CraftBlock : MonoBehaviour
         {
             ID = "";
         }
+    }
+
+
+    void OnLeftClick()
+    {
+        if (filled())
+            unfill();
     }
 }
