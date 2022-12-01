@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u5F00\u59CB\u6E38\u620F"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f009baddb4331194391eecd1119b182b, type: 2}
-  m_sharedMaterial: {fileID: 7307396077484692737, guid: f009baddb4331194391eecd1119b182b,
+  m_fontAsset: {fileID: 11400000, guid: de7dc25687e1cee449b6be2cf6bafb35, type: 2}
+  m_sharedMaterial: {fileID: 2382837242424920408, guid: de7dc25687e1cee449b6be2cf6bafb35,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -319,8 +319,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u9000\u51FA\u6E38\u620F"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f009baddb4331194391eecd1119b182b, type: 2}
-  m_sharedMaterial: {fileID: 7307396077484692737, guid: f009baddb4331194391eecd1119b182b,
+  m_fontAsset: {fileID: 11400000, guid: de7dc25687e1cee449b6be2cf6bafb35, type: 2}
+  m_sharedMaterial: {fileID: 2382837242424920408, guid: de7dc25687e1cee449b6be2cf6bafb35,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -698,7 +698,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1980435902}
         m_TargetAssemblyTypeName: SceneExchange, Assembly-CSharp
-        m_MethodName: StartPage
+        m_MethodName: StoryPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 872547343}
   - component: {fileID: 872547342}
   m_Layer: 5
-  m_Name: introduce
+  m_Name: WebPage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -832,7 +832,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1980435902}
         m_TargetAssemblyTypeName: SceneExchange, Assembly-CSharp
-        m_MethodName: introduce
+        m_MethodName: WebPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -940,8 +940,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u6E38\u620F\u8BF4\u660E"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f009baddb4331194391eecd1119b182b, type: 2}
-  m_sharedMaterial: {fileID: 7307396077484692737, guid: f009baddb4331194391eecd1119b182b,
+  m_fontAsset: {fileID: 11400000, guid: de7dc25687e1cee449b6be2cf6bafb35, type: 2}
+  m_sharedMaterial: {fileID: 2382837242424920408, guid: de7dc25687e1cee449b6be2cf6bafb35,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1111,9 +1111,9 @@ RectTransform:
   - {fileID: 1642324350}
   - {fileID: 1755647847}
   - {fileID: 645189815}
-  - {fileID: 1417934771}
-  - {fileID: 872547341}
   - {fileID: 1311419947}
+  - {fileID: 872547341}
+  - {fileID: 1417934771}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1135,7 +1135,7 @@ GameObject:
   - component: {fileID: 1311419949}
   - component: {fileID: 1311419948}
   m_Layer: 5
-  m_Name: loaddoc
+  m_Name: LoadDoc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1155,7 +1155,7 @@ RectTransform:
   m_Children:
   - {fileID: 1955187440}
   m_Father: {fileID: 1233529315}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1289,7 +1289,7 @@ RectTransform:
   m_Children:
   - {fileID: 573531458}
   m_Father: {fileID: 1233529315}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1804,8 +1804,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u514B\u745E\u65AF\u7684\u6D41\u6D6A\u8005"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f009baddb4331194391eecd1119b182b, type: 2}
-  m_sharedMaterial: {fileID: 7307396077484692737, guid: f009baddb4331194391eecd1119b182b,
+  m_fontAsset: {fileID: 11400000, guid: de7dc25687e1cee449b6be2cf6bafb35, type: 2}
+  m_sharedMaterial: {fileID: 2382837242424920408, guid: de7dc25687e1cee449b6be2cf6bafb35,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1940,8 +1940,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u8F7D\u5165\u5B58\u6863"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f009baddb4331194391eecd1119b182b, type: 2}
-  m_sharedMaterial: {fileID: 7307396077484692737, guid: f009baddb4331194391eecd1119b182b,
+  m_fontAsset: {fileID: 11400000, guid: de7dc25687e1cee449b6be2cf6bafb35, type: 2}
+  m_sharedMaterial: {fileID: 2382837242424920408, guid: de7dc25687e1cee449b6be2cf6bafb35,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
