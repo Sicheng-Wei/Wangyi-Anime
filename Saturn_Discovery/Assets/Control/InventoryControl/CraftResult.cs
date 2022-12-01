@@ -11,12 +11,12 @@ public class CraftResult : MonoBehaviour
     CraftBlock btn1,btn2,btn3,btn4;
     readonly Dictionary<int, string> CraftDic = new Dictionary<int, string>
     {
-           {18536, "4638"},
+           {23240, "4638"},
            {39372, "9337"},
           { 9292, "9843"},
            {18599, "4637"},
            {18596, "4633"},
-          { 9256, "4645"},
+          { 18593, "4645"},
     };
 
 

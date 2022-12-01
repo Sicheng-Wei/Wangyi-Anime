@@ -65,6 +65,7 @@
     <Compile Include="Assets\Control\SceneExchange.cs" />
     <Compile Include="Assets\Control\InventoryControl\CraftBlock.cs" />
     <Compile Include="Assets\Control\InventoryControl\CraftResult.cs" />
+    <Compile Include="Assets\Control\InventoryControl\Additem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
