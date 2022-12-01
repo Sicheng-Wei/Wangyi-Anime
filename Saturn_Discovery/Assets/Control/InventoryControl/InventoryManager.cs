@@ -36,19 +36,19 @@ public class InventoryManager : MonoBehaviour
     }
 
 
-    void changenum(string ID, int num)
+    public void changenum(string ID, int num)
     {
         Inv[ID] = num;
         GameObject.Find(ID).GetComponent<InventoryControl>().updatenum(num);
         
     }
 
-    void addnum(string ID, int num)
+    public void addnum(string ID, int num)
     {
         Inv[ID] += num;
         GameObject.Find(ID).GetComponent<InventoryControl>().updatenum(num);
     }
-    int  minusnum(string ID, int num)
+    public int  minusnum(string ID, int num)
     {
         if (Inv[ID] > num)
         {
