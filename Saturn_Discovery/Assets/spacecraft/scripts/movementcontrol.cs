@@ -7,7 +7,7 @@ public class MovementControl : MonoBehaviour
     // Start is called before the first frame update
 
     float forwardmovespeed = 6f;
-    float rotatespeed = 3f;
+    float rotatespeed = 8f;
 
     // Use this for initialization
     void Start()
