@@ -11,7 +11,7 @@ public class CameraControl : MonoBehaviour
     private Transform watchPoint;           //注视目标点
     private GameObject stdObj;
 
-    private float watchPointHeight = 0.3f;  //注视目标点高度
+    private float watchPointHeight = 0.1f;  //注视目标点高度
 
     private float distance = 30f;           //当前 摄像机到目标点距离
     private float distanceMax = 50f;        //到目标点最大距离
@@ -32,6 +32,7 @@ public class CameraControl : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         stdObj = new GameObject();
+        stdObj.transform.Rotate(0.0f, 180.0f, 0.0f);
         watchPoint = stdObj.transform;
         cam = gameObject.GetComponent<Camera>();
     }
@@ -50,6 +51,7 @@ public class CameraControl : MonoBehaviour
             cam.transform.localRotation = new Quaternion();
             Destroy(stdObj);
             stdObj = new GameObject();
+            stdObj.transform.Rotate(0.0f, 180.0f, 0.0f);
             watchPoint = stdObj.transform;
         }
     }
@@ -58,6 +60,7 @@ public class CameraControl : MonoBehaviour
     {
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
+            distance += distanceSpeed;
             if (distance > distanceMax) distance = distanceMax;
         }
         else if (Input.GetAxis("Mouse ScrollWheel") > 0)
@@ -87,10 +90,10 @@ public class CameraControl : MonoBehaviour
     {
         Vector3 PointPos = player.position;
         PointPos.y += watchPointHeight;
-        watchPoint.position = Vector3.Lerp(watchPoint.position, PointPos, 0.9f);
+        watchPoint.position = Vector3.Lerp(watchPoint.position, PointPos, 1.0f);
 
         Vector3 cameraPos = watchPoint.position + finalVec;
-        transform.position = Vector3.Lerp(transform.position, cameraPos, 0.2f);
+        transform.position = Vector3.Lerp(transform.position, cameraPos, 1.0f);
         transform.LookAt(watchPoint.position);
     }
 }

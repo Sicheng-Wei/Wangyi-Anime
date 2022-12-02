@@ -56,6 +56,8 @@
     <Analyzer Include="D:\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Control\Appearance\CamSwitch.cs" />
+    <Compile Include="Assets\Control\Appearance\CamRotate.cs" />
     <Compile Include="Assets\Control\UIControl\StarTracer.cs" />
     <Compile Include="Assets\Control\Appearance\CanvasVisible.cs" />
     <Compile Include="Assets\Control\InventoryControl\CraftBlock.cs" />
@@ -67,6 +69,9 @@
     <Compile Include="Assets\Control\UIControl\InventoryControl.cs" />
     <Compile Include="Assets\Control\UIControl\StoryPage.cs" />
     <Compile Include="Assets\Control\SceneExchange.cs" />
+    <Compile Include="Assets\Control\Appearance\CamBack.cs" />
+    <Compile Include="Assets\Control\InventoryControl\AddItem.cs" />
+    <Compile Include="Assets\Control\Appearance\RoadMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
