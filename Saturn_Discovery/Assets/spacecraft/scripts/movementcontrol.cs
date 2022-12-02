@@ -26,8 +26,8 @@ public class MovementControl : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                transform.Translate(Camera.main.fieldOfView * Vector3.forward * forwardmovespeed * Time.deltaTime);
-                if (Camera.main.fieldOfView < 170)
+                transform.Translate(Camera.main.fieldOfView * Vector3.forward * forwardmovespeed * Time.deltaTime / 10.0f);
+                if (Camera.main.fieldOfView < 140)
                 {
                     Camera.main.fieldOfView += 1;
                 }

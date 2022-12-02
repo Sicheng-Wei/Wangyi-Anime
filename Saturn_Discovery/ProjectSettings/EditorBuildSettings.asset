@@ -14,19 +14,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/StoryPage.unity
     guid: 95e6c26bbe91b6e46a8cc07eb84996cc
-  - enabled: 1
-    path: Assets/story2.unity
-    guid: 09bff903fabba5b409d066a082aeb0da
-  - enabled: 1
-    path: Assets/story3.unity
-    guid: f200231fa9e3b2948bc43194d163cb84
-  - enabled: 1
-    path: Assets/story4.unity
-    guid: 5ff64b159f107e642bc7f71c30b78165
-  - enabled: 1
-    path: Assets/story5.unity
-    guid: 6703725c03a38f8498ff564cbb100d3e
-  - enabled: 1
-    path: Assets/story6.unity
-    guid: 149e98aefccf3694ba9eefac72ae17f9
   m_configObjects: {}
